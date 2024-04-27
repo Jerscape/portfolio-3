@@ -169,6 +169,9 @@ p {
 nav {
 
   width: 90%;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
 }
 
 nav ul {
@@ -213,12 +216,21 @@ nav ul li:hover {
 .hero-box {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: start;
+  align-items: end;
+  justify-content: center;
+  
   padding: 5px;
   margin: 0 auto; /* Centering the hero box */
+  margin-bottom: 20px;
   max-width: 90%; /* Limiting width to avoid overflow */
-  min-height: 40vh;
+  min-height: 30vh;
+}
+
+.column-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .name-title-box {
@@ -235,6 +247,8 @@ nav ul li:hover {
 
 .title{
   display: flex;
+  margin: 0px 0px;
+  overflow: hidden;
 }
 
 .icon-box{
@@ -246,6 +260,23 @@ nav ul li:hover {
 
 .icon-box i {
   color: var(--text-rasp); /* Sets the color of the icon */
+}
+
+.hero-button {
+  display: flex;
+  justify-content: center;
+  width: 20vh;
+  border: solid;
+  border-width: 2px;
+  border-color: var(--text-orange);
+  background-color: var(--bkg-jet);
+  color: var(--text-orange);
+  margin-bottom: 40px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  padding: 10px;
+  font-weight: 500;
+  
 }
 
 .intro {
@@ -291,6 +322,44 @@ nav ul li:hover {
   justify-content: center; /* Centers horizontally */
   margin-bottom: 40px;
 }
+
+.projects-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--bkg-jet);
+}
+
+.projects-section h1 {
+  font-size: 3rem;
+  margin-top: 40px;
+}
+
+.project-slideshow {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 65%
+
+}
+
+.project-box{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bkg-jet);  
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 40px;
+  border: solid;
+  border-width: 5px;
+  border-color: var(--bkg-white-antiflash);
+}
+
 
 
 /*MEDIA QUERIES*/
@@ -338,6 +407,18 @@ nav ul li:hover {
   .stack-row {
     flex-direction: column;  /* Stack icons vertically */
     gap: 20px;               /* Space between each icon */
+  }
+
+  .hero-button {
+ 
+    width: 30vh;
+    border: solid;
+    margin-bottom: 40px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2rem;
+    padding: 10px;
+   
+    
   }
 
 }
