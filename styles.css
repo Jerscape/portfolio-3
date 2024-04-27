@@ -143,6 +143,7 @@ h1{
   color: var(--text-orange);
   padding: 0px;
   line-height: 1.1;
+  /* display: flex; */
  
 }
 
@@ -166,6 +167,11 @@ p {
   
 }
 
+a {
+  text-decoration: none;
+  color: inherit
+}
+
 nav {
 
   width: 90%;
@@ -179,6 +185,7 @@ nav ul {
   align-items: center;
   justify-content: center;
   color: var(--bkg-white-antiflash);
+  text-decoration: none;
 }
 
 nav ul li {
@@ -289,6 +296,11 @@ nav ul li:hover {
   align-items: start;
 }
 
+/*purely to link from the top nav to the intro section.*/
+#intro {
+
+}
+
 .intro p {
   width: 60%;
   font-family: "Poppins", sans-serif;
@@ -328,37 +340,115 @@ nav ul li:hover {
   flex-direction: column;
   align-items: center;
   background-color: var(--bkg-jet);
+  padding-bottom: 20px;
+}
+
+/* for the button linking functionality*/
+#projects-section {
+
+}
+
+.project-heading-box {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  justify-content: start;
+  align-content: start;
+ 
+  margin-top: 20px;
+
 }
 
 .projects-section h1 {
   font-size: 3rem;
-  margin-top: 40px;
+  margin-top: 20px;
+  /* padding: 20px; */
 }
 
 .project-slideshow {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 65%
+  align-items: center;
+  width: 55%
 
 }
 
-.project-box{
+.project-github {
+  padding: 20px;
+}
+
+.project-github i {
+  color: var(--text-rasp); /* Sets the color of the icon */
+  font-size: 2rem;
+}
+
+/* .project-box{
   display: flex;
   flex-direction: column;
   background-color: var(--bkg-jet);  
+  justify-content: center;
+  align-items: center;
+} */
+
+.projects-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Check if this affects the inner margin settings */
+  margin-top: 50px;
+  margin-bottom: 20px;
+  padding: 20px;
 }
+
 
 .project {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 40px 40px;
+  /* margin: 40px 40px; */
+  margin-top: 10px;
   border: solid;
   border-width: 5px;
   border-color: var(--bkg-white-antiflash);
+  background-color: var(--bkg-jet);
+  font-family: "Poppins", sans-serif;
 }
+
+.project h1 {
+  color: var(--text-rasp);
+  font-size: 2rem;
+  margin-top: 0;
+  
+}
+.project p {
+  color: var(--text-orange);
+  font-size: 1.2 rem;
+  padding: 10px;
+
+}
+
+.project ul {
+  color: var(--text-orange);
+  margin: 0;
+}
+
+.project-image {
+  width: 100%; /* Makes sure the container doesn't exceed the parent size */
+  overflow: hidden; /* Optionally hide overflow content */
+  padding: 20px;
+}
+
+.project-image img {
+  width: 100%; /* Scales the image to fit the width of its container */
+  height: auto; /* Maintains the aspect ratio of the image */
+  display: block; /* Removes extra space below the image */
+}
+
+.project-info {
+  padding: 30px;
+}
+
 
 
 
@@ -419,6 +509,13 @@ nav ul li:hover {
     padding: 10px;
    
     
+  }
+
+  .project-slideshow {
+    width: 90%;
+  }
+  .project {
+    width: 100%;
   }
 
 }
