@@ -14,6 +14,7 @@
   --text-rasp: #B74F6F;
   --text-mint: #DFF2DF;
   --text-celtic: #226CE0;
+  --text-jet: #34312d;
 
 }
 
@@ -167,21 +168,24 @@ p {
 
 nav {
 
+  width: 90%;
 }
 
 nav ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 50px;
   color: var(--bkg-white-antiflash);
 }
 
 nav ul li {
-  font-size: 30px;
+  font-size: 1.5rem;
   text-decoration: none;
   list-style-type: none;
-}
+  padding: 10px 20px;
+
+}  
+
 
 nav ul li:hover {
   color: var(--text-rasp); /* Change text color on hover */
@@ -195,7 +199,7 @@ nav ul li:hover {
   flex-direction: column;
 }
 
-.hero-box {
+/* .hero-box {
   display: flex;
   flex-direction: row;
   align-items: end;
@@ -204,12 +208,24 @@ nav ul li:hover {
   margin-bottom: 100px;
   min-height: 40vh;
   padding: 5px;
+} */
+
+.hero-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  padding: 5px;
+  margin: 0 auto; /* Centering the hero box */
+  max-width: 90%; /* Limiting width to avoid overflow */
+  min-height: 40vh;
 }
 
 .name-title-box {
   display: flex;
   flex-direction: column;
   margin: 0px 0px;
+
 }
 
 .name {
@@ -233,7 +249,96 @@ nav ul li:hover {
 }
 
 .intro {
+  display: flex;
+  flex-direction: column;
   width:100%;
   min-height: 30vh;
   background-color: var(--bkg-latte);
+  justify-content: center;
+  align-items: start;
 }
+
+.intro p {
+  width: 60%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: var(--text-jet);
+  margin: 0 auto;
+  margin-top:40px;
+  margin-bottom: 20px;
+}
+
+.stack-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 60%;
+  min-height: 100px;
+  gap: 40px;
+  margin: 0 auto;
+
+}
+
+.stack-row i {
+  font-size: 100px; /* Ensures the icon is at least 100px in height */
+  color: var(--text-rasp); /* Sets the color of the icon to a variable */
+  width: 100px; /* Optional: sets a specific width if needed */
+  height: 100px; /* Optional: sets a specific height to match font-size */
+  display: flex; /* Uses flexbox to center the icon if needed */
+  align-items: center; /* Centers vertically */
+  justify-content: center; /* Centers horizontally */
+  margin-bottom: 40px;
+}
+
+
+/*MEDIA QUERIES*/
+
+/* Media Query to change layout under 500px */
+@media (max-width: 800px) {
+
+  nav {
+    width: 100%;               /* Ensure the nav takes the full width */
+    display: flex;             /* Confirm it uses flexbox (it should already) */
+    justify-content: center;   /* Center content horizontally */
+    align-items: center;       /* Center content vertically */
+  }
+
+  nav ul {
+    flex-direction: column;    /* Stack the items vertically */
+    justify-content: center;   /* Center items vertically */
+    align-items: center;       /* Center items horizontally */
+    width: 100%;               /* Ensure the UL takes the full width of the nav */
+    padding: 0;                /* Remove any default padding */
+    list-style-type: none;     /* Remove list styles */
+    margin: 0;                 /* Remove any default margins */
+  }
+
+  nav ul li {
+    width: 100%;               /* Each list item takes full width to match the nav width */
+    text-align: center;        /* Center the text inside each list item */
+    padding: 10px 0;           /* Add padding for better touch targets and spacing */
+  }
+
+  .hero-box {
+    flex-direction: column;  /* Stack child elements vertically */
+    align-items: center;     /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    padding: 20px;           /* Add padding for spacing */
+    gap: 20px;               /* Space between each child element */
+  }
+
+  h1, h2 {
+    text-align: center;      /* Center text for headings */
+    width: 100%;             /* Full width to ensure centering */
+    margin-bottom: 10px;     /* Add some space below each heading */
+  }
+  
+  .stack-row {
+    flex-direction: column;  /* Stack icons vertically */
+    gap: 20px;               /* Space between each icon */
+  }
+
+}
+
