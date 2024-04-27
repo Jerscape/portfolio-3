@@ -318,14 +318,14 @@ nav ul li:hover {
   align-items: center;
   flex-direction: row;
   width: 60%;
-  min-height: 100px;
-  gap: 40px;
+  min-height: 50px;
+  gap: 25px;
   margin: 0 auto;
 
 }
 
 .stack-row i {
-  font-size: 100px; /* Ensures the icon is at least 100px in height */
+  font-size: 50px; /* Ensures the icon is at least 100px in height */
   color: var(--text-rasp); /* Sets the color of the icon to a variable */
   width: 100px; /* Optional: sets a specific width if needed */
   height: 100px; /* Optional: sets a specific height to match font-size */
@@ -370,7 +370,7 @@ nav ul li:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 55%
+  width: 50%
 
 }
 
@@ -446,7 +446,11 @@ nav ul li:hover {
 }
 
 .project-info {
-  padding: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  
 }
 
 
