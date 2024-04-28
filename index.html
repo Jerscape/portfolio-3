@@ -21,12 +21,14 @@
 <body>
   <main class="main-flex">
     <nav>
-      <ul>
-        <li><a href="#intro">Intro</a></li>
-        <li><a href="#projects-section">Projects</a></li>
-        <li>Connect</li>
-        <li>Fun</li>
-      </ul>
+      <div class="top-nav-menu"> <!--wrapping the ul/li in a div is helpful for hiding and unhiding them-->
+        <ul>
+          <li><a href="#intro">Intro</a></li>
+          <li><a href="#projects-section">Projects</a></li>
+          <li>Connect</li>
+          <li>Fun</li>
+        </ul>
+      </div>
     </nav>
   </main>
   <div class="column-box">
@@ -68,10 +70,10 @@
 
   </div>
 
-  <section id="projects-section" class="projects-section">
+  <section id="projects-section" class="projects-section" ;>
     <h1>Projects</h1>
     <div class="project-slideshow">
-      <div class="project">
+      <div class="project" style="display: block">
 
         <div class="project-heading-box">
           <h1>Photolabs</h1>
@@ -85,27 +87,82 @@
         </div> <!--end image div-->
 
         <div class="project-info">
+          <p>This was my major React project at Lighthouse Labs. This project loads photos from ah API and demonstrates
+            the use of state
+            to manage components in a web app. <br><br>
+            Key features of this app includes allowing the user to enlarge photos, favourite photos, and filter photos
+            by topic.
+          </p>
+        </div>
+        <div class="project-github"><a href="https://github.com/Jerscape/photolabs" target="_blank"
+            rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+
+      <!--Project 2-->
+      <div class="project" style="display: none">
+
+        <div class="project-heading-box">
+          <h1>Project2</h1>
+        </div>
+        <div class="project-image">
+          <img src="images/photolabs-800.jpg" srcset="images/photolabs-400.jpg 400w,
+            images/photolabs-800.jpg 800w,
+            images/photolabs-1600.png 1600w" sizes="(max-width: 600px) 400px,
+            (max-width: 900px) 800px,
+            1600px" alt="Photolabs project image"> <!--end img tag-->
+        </div> <!--end image div-->
+
+        <div class="project-info">
+          <p>This was my major React project at Lighthouse Labs. This project loads photos from ah API and demonstrates
+            the use of state
+            to manage components in a web app. <br>
+            Key features of this app includes allowing the user to enlarge photos, favourite photos, and filter photos
+            by topic.
+          </p>
+        </div>
+        <div class="project-github"><a href="https://github.com/Jerscape/photolabs" target="_parent"
+            rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+
+      <!--Project 3-->
+      <div class="project" style="display: none">
+
+        <div class="project-heading-box">
+          <h1>Project3</h1>
+        </div>
+        <div class="project-image">
+          <img src="images/photolabs-800.jpg" srcset="images/photolabs-400.jpg 400w,
+            images/photolabs-800.jpg 800w,
+            images/photolabs-1600.png 1600w" sizes="(max-width: 600px) 400px,
+            (max-width: 900px) 800px,
+            1600px" alt="Photolabs project image"> <!--end img tag-->
+        </div> <!--end image div-->
+
+        <div class="project-info">
           <p>This was my major React project at Lighthouse Labs. This project demonstrates the use of state
             to manage components in a web app.<br>
           </p>
-
-          <ul>
-            <li>Loads a list of photos from an API</li>
-            <li>Allows users to view an enlarged version of any given photo, as well as displaying a list of similar
-              photos</li>
-            <li>Allows users to "favourite" photos</li>
-            <li>Allows users to filter photos by topics in top navigation</li>
-          </ul>
         </div>
         <div class="project-github"><a href="https://github.com/Jerscape/photolabs" target="blank"
             rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
         </div>
       </div>
-      <div class="project">Project Div</div>
-      <div class="project">Project Div</div>
+      <div style="text-align:center">
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
     </div>
-  </section>
 
+
+    <!-- <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div> -->
+  </section>
+  <script src="scripts.js"></script>
 </body>
 
 </html>
