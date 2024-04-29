@@ -26,5 +26,16 @@ document.addEventListener('DOMContentLoaded', function() {
       }
       slides[slideIndex - 1].style.display = "block";
   }
+
+  // Hamburger menu toggle functionality
+  const hamburger = document.querySelector('.hamburger-menu');
+  const navMenu = document.querySelector('.top-nav-menu');
+
+  hamburger.addEventListener('click', function() {
+      navMenu.classList.toggle('active');
+  });
+
 });
+
+
 

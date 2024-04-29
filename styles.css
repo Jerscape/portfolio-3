@@ -1,7 +1,7 @@
+:root {
 
-:root { 
-
-  --bkg-jet: #34312D; /*JEt*/
+  --bkg-jet: #34312D;
+  /*JEt*/
   --bkg-columbia: #CEE5F2;
   --bkg-white-antiflash: #F3F3F4;
   --bgg-baby-powder: #F0F4EF;
@@ -9,8 +9,10 @@
   --bkg-latte: #F4F3EE;
   --bkg-pale: #F5E5FC;
 
-  --text-orange: #E2A76F; /*Muted orange*/
-  --text-lav: #CCC9DC; /*Lavender*/
+  --text-orange: #E2A76F;
+  /*Muted orange*/
+  --text-lav: #CCC9DC;
+  /*Lavender*/
   --text-rasp: #B74F6F;
   --text-mint: #DFF2DF;
   --text-celtic: #226CE0;
@@ -133,18 +135,19 @@
 
 body {
   background-color: #34312D;
-  font-family: 'Poppins', sans-serif;  /* Correctly formatted */
+  font-family: 'Poppins', sans-serif;
+  /* Correctly formatted */
   font-size: 20px;
 }
 
-h1{
+h1 {
   font-size: 72px;
   margin: 0px 0px;
   color: var(--text-orange);
   padding: 0px;
   line-height: 1.1;
   /* display: flex; */
- 
+
 }
 
 h2 {
@@ -157,14 +160,14 @@ h2 {
   display: inline-block;
   width: 100%;
   text-align: center;
-  transform: scaleX(1.2); 
+  transform: scaleX(1.2);
 
 
 }
 
 p {
   font-size: 20px;
-  
+
 }
 
 a {
@@ -182,6 +185,7 @@ nav {
 
 nav ul {
   display: flex;
+  position: relative;
   align-items: center;
   justify-content: center;
   color: var(--bkg-white-antiflash);
@@ -194,11 +198,12 @@ nav ul li {
   list-style-type: none;
   padding: 10px 20px;
 
-}  
+}
 
 
 nav ul li:hover {
-  color: var(--text-rasp); /* Change text color on hover */
+  color: var(--text-rasp);
+  /* Change text color on hover */
 }
 
 
@@ -225,11 +230,13 @@ nav ul li:hover {
   flex-direction: row;
   align-items: end;
   justify-content: center;
-  
+
   padding: 5px;
-  margin: 0 auto; /* Centering the hero box */
+  margin: 0 auto;
+  /* Centering the hero box */
   margin-bottom: 20px;
-  max-width: 90%; /* Limiting width to avoid overflow */
+  max-width: 90%;
+  /* Limiting width to avoid overflow */
   min-height: 30vh;
 }
 
@@ -252,21 +259,23 @@ nav ul li:hover {
   margin: 0px 0px;
 }
 
-.title{
+.title {
   display: flex;
   margin: 0px 0px;
   overflow: hidden;
 }
 
-.icon-box{
+.icon-box {
   display: flex;
-  font-size: calc(72px + 48px); /* Example combining h1 and h2 sizes */
+  font-size: calc(72px + 48px);
+  /* Example combining h1 and h2 sizes */
   padding-left: 20px;
 
-} 
+}
 
 .icon-box i {
-  color: var(--text-rasp); /* Sets the color of the icon */
+  color: var(--text-rasp);
+  /* Sets the color of the icon */
 }
 
 .hero-button {
@@ -283,13 +292,13 @@ nav ul li:hover {
   font-size: 1.2rem;
   padding: 10px;
   font-weight: 500;
-  
+
 }
 
 .intro {
   display: flex;
   flex-direction: column;
-  width:100%;
+  width: 100%;
   min-height: 30vh;
   background-color: var(--bkg-latte);
   justify-content: center;
@@ -297,9 +306,7 @@ nav ul li:hover {
 }
 
 /*purely to link from the top nav to the intro section.*/
-#intro {
-
-}
+#intro {}
 
 .intro p {
   width: 60%;
@@ -308,7 +315,7 @@ nav ul li:hover {
   font-style: normal;
   color: var(--text-jet);
   margin: 0 auto;
-  margin-top:40px;
+  margin-top: 40px;
   margin-bottom: 20px;
 }
 
@@ -325,13 +332,20 @@ nav ul li:hover {
 }
 
 .stack-row i {
-  font-size: 50px; /* Ensures the icon is at least 100px in height */
-  color: var(--text-rasp); /* Sets the color of the icon to a variable */
-  width: 100px; /* Optional: sets a specific width if needed */
-  height: 100px; /* Optional: sets a specific height to match font-size */
-  display: flex; /* Uses flexbox to center the icon if needed */
-  align-items: center; /* Centers vertically */
-  justify-content: center; /* Centers horizontally */
+  font-size: 50px;
+  /* Ensures the icon is at least 100px in height */
+  color: var(--text-rasp);
+  /* Sets the color of the icon to a variable */
+  width: 100px;
+  /* Optional: sets a specific width if needed */
+  height: 100px;
+  /* Optional: sets a specific height to match font-size */
+  display: flex;
+  /* Uses flexbox to center the icon if needed */
+  align-items: center;
+  /* Centers vertically */
+  justify-content: center;
+  /* Centers horizontally */
   margin-bottom: 40px;
 }
 
@@ -352,9 +366,7 @@ nav ul li:hover {
 
 
 /* an ID (vs the class above) for the button linking functionality*/
-#projects-section {
-
-}
+#projects-section {}
 
 .project-heading-box {
   display: flex;
@@ -380,7 +392,6 @@ nav ul li:hover {
   justify-content: center;
   align-items: center;
   width: 50%
-
 }
 
 .project-github {
@@ -392,7 +403,8 @@ nav ul li:hover {
 }
 
 .project-github i {
-  color: var(--text-rasp); /* Sets the color of the icon */
+  color: var(--text-rasp);
+  /* Sets the color of the icon */
   font-size: 2rem;
 }
 
@@ -407,12 +419,13 @@ nav ul li:hover {
 .projects-section {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Check if this affects the inner margin settings */
+  align-items: center;
+  /* Check if this affects the inner margin settings */
   margin-top: 30px;
   margin-bottom: 20px;
   padding: 20px;
   max-height: 100vh;
-  
+
 }
 
 .project-slideshow {
@@ -434,7 +447,8 @@ nav ul li:hover {
   font-family: "Poppins", sans-serif;
   /* box-shadow: 4px 4px 15px rgba(226, 167, 111, 1.00);  */
   /* box-shadow: 4px 4px 10px rgba(183, 79, 111, 0.5); */
-  box-shadow: 4px 4px 10px rgba(183, 79, 111, 1);
+  /* box-shadow: 4px 4px 10px rgba(183, 79, 111, 1); */
+  box-shadow: 4px 4px 4px rgba(242, 242, 244, 1);
   width: 100%;
   height: 750px;
   overflow: auto;
@@ -446,8 +460,9 @@ nav ul li:hover {
   color: var(--text-rasp);
   font-size: 2rem;
   margin-top: 0;
-  
+
 }
+
 .project p {
   color: var(--text-orange);
   font-size: 1rem;
@@ -461,17 +476,22 @@ nav ul li:hover {
 }
 
 .project-image {
-  width: 100%; /* Makes sure the container doesn't exceed the parent size */
-  overflow: hidden; /* Optionally hide overflow content */
+  width: 100%;
+  /* Makes sure the container doesn't exceed the parent size */
+  overflow: hidden;
+  /* Optionally hide overflow content */
   padding: 10px;
   display: flex;
   justify-content: center;
 }
 
 .project-image img {
-  width: 90%; /* Scales the image to fit the width of its container */
-  height: auto; /* Maintains the aspect ratio of the image */
-  display: block; /* Removes extra space below the image */
+  width: 90%;
+  /* Scales the image to fit the width of its container */
+  height: auto;
+  /* Maintains the aspect ratio of the image */
+  display: block;
+  /* Removes extra space below the image */
   border: solid;
   border-width: 3px;
   border-color: var(--text-rasp);
@@ -482,19 +502,47 @@ nav ul li:hover {
   padding-left: 30px;
   padding-right: 30px;
   margin: 0 auto;
-  
+
 }
 
 /*SLIDER ARROWS*/
 
-.prev, .next {
-  color: var(--text-orange); /* Using a CSS variable for color */
-  font-size: 38px; /* Adjust size as needed */
-  transition: color 0.3s ease; /* Smooth transition for hover effects */
+.prev,
+.next {
+  color: var(--text-orange);
+  /* Using a CSS variable for color */
+  font-size: 38px;
+  /* Adjust size as needed */
+  transition: color 0.3s ease;
+  /* Smooth transition for hover effects */
   margin: 30px;
   padding: 5px;
 }
 
+/* .hamburger-menu {
+  display: none; /* Hidden by default 
+  font-size: 40px; 
+  color: var(--bkg-white-antiflash); 
+} */
+
+.hamburger-menu {
+  display: none;
+  /* Hidden by default */
+  font-size: 40px;
+  /* Icon size */
+  color: var(--bkg-white-antiflash);
+  /* Icon color */
+  position: absolute;
+  /* Position it absolutely within the nav */
+  top: 10px;
+  /* Space from the top */
+  /* left: 10px; */
+  /* Space from the left */
+  z-index: 1000;
+  /* Make sure it's above other content */
+  cursor: pointer;
+  /* Indicates it's clickable */
+}
 
 /*MEDIA QUERIES*/
 
@@ -502,70 +550,179 @@ nav ul li:hover {
 @media (max-width: 800px) {
 
   nav {
-    width: 100%;               /* Ensure the nav takes the full width */
-    display: flex;             /* Confirm it uses flexbox (it should already) */
-    justify-content: center;   /* Center content horizontally */
-    align-items: center;       /* Center content vertically */
+    width: 100%;
+    /* Ensure the nav takes the full width */
+    display: flex;
+    /* Confirm it uses flexbox (it should already) */
+    justify-content: center;
+    /* Center content horizontally */
+    align-items: center;
+    /* Center content vertically */
   }
 
   nav ul {
-    flex-direction: column;    /* Stack the items vertically */
-    justify-content: center;   /* Center items vertically */
-    align-items: center;       /* Center items horizontally */
-    width: 100%;               /* Ensure the UL takes the full width of the nav */
-    padding: 0;                /* Remove any default padding */
-    list-style-type: none;     /* Remove list styles */
-    margin: 0;                 /* Remove any default margins */
+    flex-direction: column;
+    /* Stack the items vertically */
+    justify-content: center;
+    /* Center items vertically */
+    align-items: center;
+    /* Center items horizontally */
+    width: 100%;
+    /* Ensure the UL takes the full width of the nav */
+    padding: 0;
+    /* Remove any default padding */
+    list-style-type: none;
+    /* Remove list styles */
+    margin: 0;
+    /* Remove any default margins */
   }
 
   nav ul li {
-    width: 100%;               /* Each list item takes full width to match the nav width */
-    text-align: center;        /* Center the text inside each list item */
-    padding: 10px 0;           /* Add padding for better touch targets and spacing */
+    width: 100%;
+    /* Each list item takes full width to match the nav width */
+    text-align: center;
+    /* Center the text inside each list item */
+    padding: 10px 0;
+    /* Add padding for better touch targets and spacing */
   }
 
   .hero-box {
-    flex-direction: column;  /* Stack child elements vertically */
-    align-items: center;     /* Center items horizontally */
-    justify-content: center; /* Center items vertically */
-    padding: 20px;           /* Add padding for spacing */
-    gap: 20px;               /* Space between each child element */
+    flex-direction: column;
+    /* Stack child elements vertically */
+    align-items: center;
+    /* Center items horizontally */
+    justify-content: center;
+    /* Center items vertically */
+    padding: 20px;
+    /* Add padding for spacing */
+    gap: 20px;
+    /* Space between each child element */
   }
 
-  h1, h2 {
-    text-align: center;      /* Center text for headings */
-    width: 100%;             /* Full width to ensure centering */
-    margin-bottom: 10px;     /* Add some space below each heading */
+  h1,
+  h2 {
+    text-align: center;
+    /* Center text for headings */
+    width: 100%;
+    /* Full width to ensure centering */
+    margin-bottom: 10px;
+    /* Add some space below each heading */
   }
-  
+
   .stack-row {
-    flex-direction: column;  /* Stack icons vertically */
-    gap: 20px;               /* Space between each icon */
+    flex-direction: column;
+    /* Stack icons vertically */
+    gap: 20px;
+    /* Space between each icon */
   }
 
   .hero-button {
- 
+
     width: 30vh;
     border: solid;
     margin-bottom: 40px;
     font-family: "Poppins", sans-serif;
     font-size: 1.2rem;
     padding: 10px;
-   
-    
+
+
   }
 
-  .stack-row {
+  /* .stack-row {
     gap: 5px;
-  }
+  } */
 
   .project-slideshow {
     width: 90%;
   }
+
   .project {
     width: 100%;
     height: 650px;
   }
 
-}
+  /*HAMBURGER MENU*/
 
+  /* Base styles for the hamburger menu */
+  .hamburger-menu {
+    display: none;
+    /* Hidden by default */
+    font-size: 40px;
+    /* Icon size */
+    color: var(--text-orange);
+    /* Set the icon color */
+    cursor: pointer;
+    /* Indicates it's clickable */
+    z-index: 1000;
+    /* Make sure it's above other content */
+    margin: 0 auto;
+    border: none;
+  }
+
+  @media (max-width: 800px) {
+    nav {
+      position: relative;
+      /* Needed for absolute positioning of the hamburger menu */
+      width: 100%;
+      /* Ensure the nav takes the full width */
+      display: flex;
+      justify-content: flex-start;
+      /* Align hamburger to the left */
+      align-items: center;
+      padding: 10px 20px;
+      /* Add some padding for better touch area */
+      background-color: var();
+      /* Match the body's background color */
+    }
+
+    .hamburger-menu {
+      display: block;
+      /* Show the hamburger icon on small screens */
+      position: relative;
+      background-color: var(--bkg-jet);
+ 
+    }
+
+    .top-nav-menu {
+      display: none;
+      /* Hide the full menu initially on small screens */
+      position: absolute;
+      /* Overlay content when displayed */
+      background-color: var(--bkg-jet);
+      /* Ensure menu background matches */
+      width: 100%;
+      /* Full width for the menu */
+      top: 50px;
+      /* Adjust to position below the hamburger icon */
+      left: 0;
+      /* Start from the left edge */
+      z-index: 999;
+      /* Below the hamburger icon but above other content */
+      flex-direction: column;
+      /* Stack the items vertically */
+    }
+
+    .top-nav-menu.active {
+      display: flex;
+      /* Show the menu when 'active' */
+      align-items: center;
+      /* Center items vertically */
+    }
+
+
+    .icon-box {
+
+      padding: 0;
+    }
+
+    .stack-row {
+      gap: 0px;
+    }
+
+    .stack-row i {
+      padding: 10px;
+      margin-bottom: 0;
+      gap: 5px;
+    }
+  }
+}
